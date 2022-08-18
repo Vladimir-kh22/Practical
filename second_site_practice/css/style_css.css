@@ -45,17 +45,12 @@ body {
 	color: #214E41;
 }
 
-<<<<<<< HEAD
 ._content {
-=======
-.content {
->>>>>>> 363cb2b5ffd8394f907f2d6631882da8542c5e9b
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-<<<<<<< HEAD
 ._ibg {
 	position: relative;
 }
@@ -71,10 +66,6 @@ body {
 
 
 /*-----Шапка-------------------------------*/
-=======
-
-/*Шапка*/
->>>>>>> 363cb2b5ffd8394f907f2d6631882da8542c5e9b
 
 .header {
 	padding: 0 15px;
@@ -162,10 +153,7 @@ body {
 	.header__container{
 		position: relative;
 		justify-content: space-around;
-<<<<<<< HEAD
 		z-index: 999;
-=======
->>>>>>> 363cb2b5ffd8394f907f2d6631882da8542c5e9b
 	}
 	.header__menu {
 		position: fixed;
@@ -225,20 +213,12 @@ body {
 }
 
 .reg:hover {
-<<<<<<< HEAD
 	background-color: #2f574a;
-=======
-	background-color: #204136;
->>>>>>> 363cb2b5ffd8394f907f2d6631882da8542c5e9b
 }
 
 .reg:active {
 	position: relative;
 	top: 1px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 363cb2b5ffd8394f907f2d6631882da8542c5e9b
 }
 
 .login{}
@@ -287,7 +267,6 @@ body {
 .none{
 	left: 0%;
 }
-<<<<<<< HEAD
 
 /*-----MAIN-------------------------------*/
 
@@ -317,6 +296,13 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
+
+@media (max-width: 440px){
+	.main-block__title {
+		font-size: 30px;
+	}
+}
+
 .main-block__text {
 	margin: 0 0 16px 0;
 	font-size: 16px;
@@ -377,5 +363,3 @@ body {
 ._ibg {
 }
 
-=======
->>>>>>> 363cb2b5ffd8394f907f2d6631882da8542c5e9b
