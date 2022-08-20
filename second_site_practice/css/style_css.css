@@ -150,10 +150,10 @@ body {
 }
 
 @media (max-width: 800px){
+
 	.header__container{
-		position: relative;
 		justify-content: space-around;
-		z-index: 999;
+		z-index: 11;
 	}
 	.header__menu {
 		position: fixed;
@@ -164,8 +164,9 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
+		background-color: #fff;
 		transition: left 0.5s ease 0s;
-
+		margin: 0;
 	}
 	.header__menu:target {
 
@@ -198,6 +199,8 @@ body {
 	}
 }
 
+@media (max-width: 450px){}
+
 
 .button__link {
 	color: #214E41;
@@ -226,8 +229,22 @@ body {
 .lang {}
 
 @media (max-width: 450px){
-	.button__item {
-		display: none;
+	.button__list {
+		position: fixed;
+		bottom: 0%;
+		background-color: #fff;
+		min-height: 60px;
+		width: 100%;
+		left: 0;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 20px;
+		z-index: 14;
+
+	}
+	.button__item:first-child{
+		flex: 1 1 auto;
+
 	}
 	
 }
@@ -265,7 +282,9 @@ body {
 }
 
 .none{
-	left: 0%;
+	left:0;
+	overflow-y: hidden;
+	z-index: 5000;
 }
 
 /*-----MAIN-------------------------------*/
@@ -417,7 +436,20 @@ body {
 
 .item-offers__img{
 	margin: 0 10px 0 0;
+	
 }
+.item-offers__img img {
+}
+
+@media (max-width: 666px){
+	.item-offers__img{
+		flex: 0 0 80px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center
+	}
+}
+
 .item-offers__title {
 	font-size: 16px;
 	line-height: 150%;
@@ -443,7 +475,7 @@ body {
 
 @media (max-width: 666px){
 	.item-offers_last {
-		margin: 0 0 0 -14px;
+		
 	}
 }
 
