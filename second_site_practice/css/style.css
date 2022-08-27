@@ -394,7 +394,6 @@ body {
 }
 .offers__body {
 	padding: 50px;
-	margin: 0 -8px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	background-color: #fff;
@@ -488,11 +487,30 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 0 60px;
+	padding: 0 60px;
 }
+
+@media (max-width: 846px){
+	.stats__body {
+		flex-direction: column;
+		padding: 0;
+	}
+}
+
 .stats__column {
-	flex: 0 1 480px;
+	flex: 0 1 50%;
 }
+
+.stats__column:not(:last-child) {
+	margin-right: 90px;
+}
+
+@media (max-width: 846px){
+	.stats__column:not(:last-child){
+		margin: 0 0 40px 0;
+	}
+}
+
 .column-plan {
 }
 .column-plan__title {
@@ -511,6 +529,13 @@ body {
 	font-size: 36px;
 	line-height: 128%;
 }
+
+@media (max-width: 891px){
+	.column-plan__text-main {
+		font-size: 30px;
+	}
+}
+
 .column-plan__text-descr {
 	margin: 0 0 26px;
 	font-style: normal;
@@ -537,20 +562,26 @@ body {
 	
 }
 .column-indicators {
-	background-color: aqua;
 }
+
 .column-indicators__item {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 10px;
 }
+
 .item-value {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	max-width: 230px;
-	padding-bottom: 30px;
+	padding-bottom: 35px;
 }
+
+.item-value:not(:last-child){
+	margin-right: 25px;
+}
+
 .item-value__percent {
 	margin-bottom: 30px;
 	font-weight: 700;
@@ -558,6 +589,13 @@ body {
 	line-height: 129%;
 	font-family: 'Roboto', sans-serif;
 }
+
+@media (max-width: 400px){
+	.item-value__percent{
+		font-size: 55px;
+	}
+}
+
 .item-value__text {
 	font-weight: 700;
 	font-size: 13px;
@@ -567,39 +605,82 @@ body {
 .item-value__text span{
 	text-decoration: underline;
 }
+
+/*-------------ИСПРАВИТЬ-КОД-(ПРОБЛЕМА-С-ПЕРЕНОСОМ)-------------*/
+
 .item-chart {
 	text-align: center;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
-
 .item-chart__column{
 	max-width: 78px;
 }
 .item-chart__column:not(:last-child) {
 	margin-right: 40px;
 }
+
+@media (max-width: 891px){
+	.item-chart__column:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: 846px){
+	.item-chart__column:not(:last-child) {
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 400px){
+	.item-chart__column:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
 .item-chart__value {
 	margin-bottom: 5px;
 }
 .item-chart__hight {
 	margin-bottom: 20px;
 	background-color: #43806C;
+	width: 78px;
 }
 .leftside {
-	width: 78px;
 	height: 150px;
 }
 .item-chart__descr {
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 169%;
 }
+
+@media (max-width: 400px){
+	.item-chart__descr {
+		font-size: 10px;
+	}	
+}
+
 .rightside {
-	width: 78px;
 	height: 300px;
 }
+
+@media (max-width: 400px){
+	.item-chart__hight {
+		width: 60px;
+	}
+}
+
+/*-------------ИСПРАВИТЬ-КОД-(ПРОБЛЕМА-С-ПЕРЕНОСОМ)-------------*/
+
 .column-indicators__descr {
 	display: flex;
 	flex-direction: row-reverse;
+	color: #757575;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 169%;
 }
 
 
