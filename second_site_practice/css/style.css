@@ -64,6 +64,14 @@ body {
 	object-fit: cover;
 }
 
+._backgrn{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+}
+
+
 
 /*-----Шапка-------------------------------*/
 
@@ -480,6 +488,7 @@ body {
 /*----------------------------------------------------------------------------------*/
 
 .page__stats {
+	margin-bottom: 120px;
 }
 .stats__container {
 }
@@ -683,5 +692,53 @@ body {
 	line-height: 169%;
 }
 
+/*----------------------------------------------------------------------------------*/
 
+.page__description-block {
+	
+}
+.description-block {
+	position: relative;
+}
+.description-block__background-left{
+	background-color: #E3EEED;
+	left: 0%;
+}
 
+.description-block__background-right{
+	background-color: #214E41;
+	right: 0;
+}
+
+.description-block__container {
+}
+._content {
+}
+.description-block__body {
+	position: relative;
+	display: flex;
+	padding: 120px 0;
+}
+.description-block__column {
+}
+.column-castom {
+	
+}
+.column-castom__title {
+}
+.column-castom__categories {
+}
+.categories {
+}
+.categories__list {
+}
+.categories__item {
+}
+.column-description {
+	position: absolute;
+	max-width: 500px;
+	right: 0;
+}
+.column-description__text {
+	color: #fff;
+}
