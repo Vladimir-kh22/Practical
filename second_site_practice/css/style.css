@@ -66,9 +66,6 @@ body {
 
 ._backgrn{
 	position: absolute;
-	width: 50%;
-	height: 100%;
-	top: 0;
 }
 
 
@@ -703,11 +700,31 @@ body {
 .description-block__background-left{
 	background-color: #E3EEED;
 	left: 0%;
+	width: 50%;
+	height: 100%;
 }
 
 .description-block__background-right{
 	background-color: #214E41;
 	right: 0;
+	width: 50%;
+	height: 100%;
+}
+
+@media (max-width: 900px){
+	.description-block__background-left{
+		background-color: #E3EEED;
+		width: 100%;
+		height: 50%;
+	}
+	
+	.description-block__background-right{
+		background-color: #214E41;
+		width: 100%;
+		height: 50%;
+		bottom: 0;
+	}
+	
 }
 
 .description-block__container {
@@ -718,27 +735,88 @@ body {
 	position: relative;
 	display: flex;
 	padding: 120px 0;
+	justify-content: space-between;
+	align-items: center;
+	background-color: aqua;
 }
+
+@media (max-width: 900px){
+	.description-block__body {
+		flex-direction: column;
+		padding: 80px 20px;
+	}
+}
+
 .description-block__column {
-}
-.column-castom {
 	
 }
-.column-castom__title {
+
+.column-castom {
+	flex: 0 1 50%;
+	background-color: beige;
+}
+@media (max-width: 900px){
+	.column-castom {
+	}
+}
+.column-castom__title{
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 154%;
+	letter-spacing: 0.05px;
+	text-transform: uppercase;
+	margin-bottom: 29px;
 }
 .column-castom__categories {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 131%;
+	color: #43806C;
+	font-family: 'Roboto', sans-serif;
+	
 }
 .categories {
 }
-.categories__list {
+.categories__list:first-child {
 }
+
+.categories__list  > *:not(:last-child) {
+	margin: 0 0 18px 0;
+}
+
 .categories__item {
 }
 .column-description {
-	position: absolute;
-	max-width: 500px;
-	right: 0;
+	flex: 0 1 50%;
+	padding-left: 100px;
+	background-color: #757575;
 }
+
+@media (max-width: 900px){
+	.column-description {
+		padding-left: 0px;
+	}
+}
+
+.categories__item:first-child {
+	color: #214E41;
+	font-weight: 700;
+}
+
+.categories__item:first-child::after{
+	content: url('../img/Icons/arrow.png');
+	margin-left: 30px;
+}
+
 .column-description__text {
 	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 170%;
+	letter-spacing: 0.02px;
+}
+
+.column-description__text > *:not(:last-child) {
+	margin: 0 0 34px 0;
 }
